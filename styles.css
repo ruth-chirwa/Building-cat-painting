@@ -12,13 +12,19 @@
   for one or more of the top, right, left, or bottom properties.*/
   /*static is the default positioning for all elements. If you assign it to an element,
    you won't be able to move it around with top, right, left, or bottom.*/
+   /*sticky positioning is a hybrid of relative and fixed positioning. It allows an element to stick to a specific position 
+   within its containing element or viewport, based on the scroll position.*/
   .cat-head{
-    position: static;
-    top: 100px;
-    left: 100px;
+    position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
     width: 205px;
     height: 180px;
     border: 1px solid #000;
     border-radius: 46%;
     background: linear-gradient(#a372e3 85%, #8e64a3 100%);
   }
+  
